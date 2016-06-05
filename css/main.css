@@ -1,0 +1,167 @@
+/* Helpers */
+
+.zero-padding {
+  padding: 0px;
+}
+
+.zero-padding-left {
+  padding-left: 0px !important;
+}
+
+.zero-padding-right {
+  padding-right: 0px !important;
+}
+
+.zero-margin-top {
+  margin-top: 0px;
+}
+
+.zero-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.text-align-center {
+text-align: center;
+}
+
+.min-height-50 {
+min-height: 100px;
+}
+
+/*.logo {
+  margin-left: 40px;
+}*/
+
+/* Header */
+
+/*.header-img {
+  width:100%;
+  height:50px;
+  background-image: url(../img/header.jpg);
+}*/
+
+#search {
+  color: white;
+  height: 30px;
+  border-bottom: 1px solid #90caf9;
+}
+
+#search:focus {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 #82b1ff ;
+}
+
+.jumbotron {
+  min-height: 250px;
+}
+
+.menu-items li a {
+  font-size: 14px;
+}
+
+/* Slider */
+
+.slider-img {
+  height: auto;
+  max-height: 250px;
+  width: 100%;
+}
+
+.my-slider {
+  margin-top: 20px;
+}
+
+/* Contacts */
+
+.contacts-submit-btn {
+  margin-top: 30px;
+}
+
+#name:focus {
+  border-bottom: 1px solid #2196f3;
+  box-shadow: 0 1px 0 0 #2196f3;
+}
+
+#name:focus + label {
+  color: #2196f3;
+}
+
+#email:focus {
+  border-bottom: 1px solid #2196f3;
+  box-shadow: 0 1px 0 0 #2196f3;
+}
+
+#email:focus + label {
+  color: #2196f3;
+}
+
+#message:focus {
+  border-bottom: 1px solid #2196f3;
+  box-shadow: 0 1px 0 0 #2196f3;
+}
+
+#message:focus + label {
+  color: #2196f3;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  background-color: #fafafa;
+}
+
+.breadcrumbs-wrapper {
+  border: 0px;
+  background-color: #fafafa;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0),0 0px 0px 0 rgba(0,0,0,00);
+}
+
+.breadcrumbs-wrapper a {
+  color: #455a64;
+}
+
+.breadcrumbs-wrapper a:before {
+  color: #37474f;
+}
+
+.breadcrumb-active {
+  color: #2196f3 !important;
+}
+
+/* Groups */
+
+.h1-for-groups {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  margin-top:75px;
+  line-height: 2;
+}
+
+.width-15p {
+width: 15%;
+}
+
+.width-85p {
+width: 85%;
+}
+
+
+/* Card */
+
+.card {
+  color: #37474f;
+}
+
+/* Footer */
+
+.page-footer {
+  padding-top: 0px !important;
+}
+
+@media screen
+and (min-width: 1280px) {
+  .container {
+    min-width: 1280px !important;
+  }
+}
