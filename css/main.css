@@ -28,6 +28,11 @@ text-align: center;
 min-height: 100px;
 }
 
+.devider {
+  color: #0091ea;
+  padding-bottom: 60px;
+}
+
 /* Common */
 
 .contact-us-btn {
@@ -145,7 +150,7 @@ min-height: 100px;
 .h1-for-groups-index {
   font-size: 20px;
   font-weight: 300;
-  color: black;
+  color: #0091ea;
   margin-top:75px;
   line-height: 2;
 
