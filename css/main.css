@@ -28,6 +28,7 @@ text-align: center;
 min-height: 100px;
 }
 
+
 /* Common */
 
 .contact-us-btn {
@@ -200,16 +201,13 @@ width: 85%;
 
 /* Footer */
 
-
-
 .footer-style {
   position: absolute;
   bottom: 0px;
-
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 150px;
-  background-color: rgb(33, 33, 33);
+  background-color: #263238;
 }
 
 .centered-text {
@@ -218,7 +216,7 @@ width: 85%;
 }
 
 .padding-top {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 html {
@@ -227,6 +225,7 @@ html {
 }
 body {
   margin: 0 0 150px;
+  padding-bottom: 50px;
 }
 
 @media screen
