@@ -142,6 +142,15 @@ min-height: 100px;
   line-height: 2;
 }
 
+.h1-for-groups-index {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  margin-top:75px;
+  line-height: 2;
+
+}
+
 .width-15p {
 width: 15%;
 }
@@ -157,10 +166,43 @@ width: 85%;
   color: #37474f;
 }
 
+.image-padding {
+  padding: 20px;
+}
+
+.paper-margin {
+  margin: 10px;
+}
+
 /* Footer */
 
-.page-footer {
-  padding-top: 0px !important;
+
+
+.footer-style {
+  position: absolute;
+  bottom: 0px;
+
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 150px;
+  background-color: rgb(33, 33, 33);
+}
+
+.centered-text {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.541176);
+}
+
+.padding-top {
+  padding-top: 30px;
+}
+
+html {
+  position:relative;
+  min-height: 100%;
+}
+body {
+  margin: 0 0 150px;
 }
 
 @media screen
