@@ -69,36 +69,49 @@ min-height: 100px;
   margin-top: 20px;
 }
 
+.slider-no-display {
+  display: none;
+}
+
 /* Contacts */
 
 .contacts-submit-btn {
   margin-top: 30px;
 }
 
-#name:focus {
+#name:focus, #name-bottom:focus {
   border-bottom: 1px solid #2196f3;
   box-shadow: 0 1px 0 0 #2196f3;
 }
 
-#name:focus + label {
+#name:focus + label, #name-bottom:focus + label {
   color: #2196f3;
 }
 
-#email:focus {
+#email:focus, #email-bottom:focus {
   border-bottom: 1px solid #2196f3;
   box-shadow: 0 1px 0 0 #2196f3;
 }
 
-#email:focus + label {
+#email:focus + label, #email-bottom:focus + label {
   color: #2196f3;
 }
 
-#message:focus {
+#tel:focus, #tel-bottom:focus {
   border-bottom: 1px solid #2196f3;
   box-shadow: 0 1px 0 0 #2196f3;
 }
 
-#message:focus + label {
+#tel:focus + label, #tel-bottom:focus + label {
+  color: #2196f3;
+}
+
+#message:focus, #message-bottom:focus {
+  border-bottom: 1px solid #2196f3;
+  box-shadow: 0 1px 0 0 #2196f3;
+}
+
+#message:focus + label, #message-bottom:focus + label {
   color: #2196f3;
 }
 
@@ -148,6 +161,17 @@ width: 15%;
 
 .width-85p {
 width: 85%;
+}
+
+/* Product */
+
+.product {
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.product-table {
+  margin-top: 30px;
 }
 
 

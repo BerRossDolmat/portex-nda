@@ -64,10 +64,10 @@
                 <img class="slider-img" src="img/slider-placeholder1.jpg">
               </li>
               <li>
-                <img class="slider-img" src="img/slider-placeholder2.jpg">
+                <img class="slider-img slider-no-display" src="img/slider-placeholder2.jpg">
               </li>
               <li>
-                <img class="slider-img" src="img/slider-placeholder3.jpg">
+                <img class="slider-img slider-no-display" src="img/slider-placeholder3.jpg">
               </li>
           	</ul>
           </div>
@@ -293,6 +293,10 @@
                 <label for="message">Текст сообщения</label>
               </div>
               <div class="input-field col s12">
+                <input id="tel" type="tel" class="validate" placeholder="+7 XXX XXX-XX-XX">
+                <label for="tel">Ваш номер телефона</label>
+              </div>
+              <div class="input-field col s12">
                 <input type="checkbox" id="callback" />
                 <label for="callback">Перезвоните мне</label>
               </div>
@@ -315,16 +319,20 @@
       <div class="modal-content">
         <form class="row">
           <div class="input-field col s12">
-            <input id="name" type="text" class="validate">
-            <label for="name">Представьтесь пожалуйста</label>
+            <input id="name-bottom" type="text" class="validate">
+            <label for="name-bottom">Представьтесь пожалуйста</label>
           </div>
           <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
-            <label for="email">Ваш Email</label>
+            <input id="email-bottom" type="email" class="validate">
+            <label for="email-bottom">Ваш Email</label>
           </div>
           <div class="input-field col s12">
-            <textarea id="message" class="materialize-textarea"></textarea>
-            <label for="message">Текст сообщения</label>
+            <textarea id="message-bottom" class="materialize-textarea"></textarea>
+            <label for="message-bottom">Текст сообщения</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="tel-bottom" type="tel" class="validate" placeholder="+7 XXX XXX-XX-XX">
+            <label for="tel-bottom">Ваш номер телефона</label>
           </div>
           <div class="input-field col s12">
             <input type="checkbox" id="callback-bottom" />

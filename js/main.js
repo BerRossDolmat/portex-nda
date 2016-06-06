@@ -10,6 +10,8 @@ $( document ).ready(function(){
 
   // Slider configuration
 
+  $(".slider-no-display").removeClass( "slider-no-display" );
+
   $('.my-slider').unslider({
     keys: false,
     arrows: false,
