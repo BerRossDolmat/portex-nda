@@ -36,7 +36,7 @@ sr.reveal('.contact-us-btn', {
   origin   : 'bottom',
   distance : '300px',
   duration : 1000,
-  delay    : 500,
+  delay    : 1200,
 });
 
 // Toasts
