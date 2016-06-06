@@ -239,6 +239,8 @@
       </div>
     </div>
 
+
+
     <!-- Footer -->
 
     <footer class="page-footer blue-grey">
@@ -250,6 +252,7 @@
         </footer>
 
     <!-- Modal Structure -->
+
     <div id="contactsModal" class="modal">
       <div class="modal-content">
         <h4>Контакты</h4>
@@ -294,9 +297,9 @@
                 <label for="callback">Перезвоните мне</label>
               </div>
               <div class="input-field col s12">
-                <button class="btn waves-effect waves-light right contacts-submit-btn blue" type="submit" name="action">Отправить письмо
+                <a href="#" class="btn waves-effect waves-light right contacts-submit-btn blue modal-action modal-close"  onclick="contactUsShowMessage()">Отправить письмо
                   <i class="material-icons right">send</i>
-                </button>
+                </a>
               </div>
             </form>
 
@@ -304,8 +307,50 @@
         </div>
       </div>
       <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Закрыть</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-blue btn-flat">Закрыть</a>
       </div>
+    </div>
+
+    <div id="contact-us-modal" class="modal">
+      <div class="modal-content">
+        <form class="row">
+          <div class="input-field col s12">
+            <input id="name" type="text" class="validate">
+            <label for="name">Представьтесь пожалуйста</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Ваш Email</label>
+          </div>
+          <div class="input-field col s12">
+            <textarea id="message" class="materialize-textarea"></textarea>
+            <label for="message">Текст сообщения</label>
+          </div>
+          <div class="input-field col s12">
+            <input type="checkbox" id="callback-bottom" />
+            <label for="callback-bottom">Перезвоните мне</label>
+          </div>
+          <div class="input-field col s12">
+            <a href="#" class="btn waves-effect waves-light right contacts-submit-btn blue modal-action modal-close" onclick="contactUsShowMessage()">Отправить письмо
+              <i class="material-icons right">send</i>
+            </a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-blue btn-flat">Закрыть</a>
+      </div>
+    </div>
+
+    <!-- Contact-Btn -->
+    <div class="contact-us-btn">
+      <a class="btn-floating btn-large waves-effect waves-light red tooltipped modal-trigger"
+         data-position="left"
+         data-delay="50"
+         data-tooltip="Написать нам."
+         href="#contact-us-modal">
+         <i class="material-icons">mode_edit</i>
+      </a>
     </div>
 
     <!--Import jQuery before materialize.js-->
@@ -313,7 +358,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
     <script src="js/unslider-min.js"></script>
   </body>
+
 </html>

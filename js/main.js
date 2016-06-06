@@ -1,7 +1,15 @@
 $( document ).ready(function(){
+
+  // Sidenavigation
+
   $(".button-collapse").sideNav();
-  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+
+  // Trigger Modals
+
   $('.modal-trigger').leanModal();
+
+  // Slider configuration
+
   $('.my-slider').unslider({
     keys: false,
     arrows: false,
@@ -11,6 +19,8 @@ $( document ).ready(function(){
   });
 });
 
+// Scroll Reveal
+
 var ScrollReveal
 window.sr = ScrollReveal();
 sr.reveal('.animate-fadein', {
@@ -19,3 +29,22 @@ sr.reveal('.animate-fadein', {
   duration : 1000,
   delay    : 200,
 });
+
+sr.reveal('.contact-us-btn', {
+  origin   : 'bottom',
+  distance : '300px',
+  duration : 1000,
+  delay    : 500,
+});
+
+// Toasts
+
+function closeToast() {
+  $( ".toast-style" ).hide();
+}
+
+var $contactUsMessage = $('<div><h5>Уважаемые коллеги!</h5> <p>Ваша заявка получена, и принята в работу. В ближайшее время (не позднее 24 часов Вы получите ответ или готовое коммерческое предложение. В случае если оно Вас устроит, Вам будет выставлен официальный счет для оплаты.</p><p> С уважением коллектив ООО НДА Деловая медицинская компания</p><div><a href="#!" onclick="closeToast()" class=" modal-action modal-close waves-effect waves-blue btn-flat">Закрыть</a></div></div>');
+
+function contactUsShowMessage() {
+  Materialize.toast($contactUsMessage, 20000, 'toast-style grey lighten-5');
+}
