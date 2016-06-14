@@ -27,9 +27,11 @@ var ScrollReveal
 window.sr = ScrollReveal();
 sr.reveal('.animate-fadein', {
   origin   : 'bottom',
-  distance : '300px',
+  distance : '100px',
   duration : 1000,
   delay    : 200,
+  viewOffset  : { top: 64 },
+  scale: 0
 });
 
 sr.reveal('.contact-us-btn', {

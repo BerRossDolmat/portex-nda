@@ -17,7 +17,7 @@
   <body class="grey lighten-5">
     <div class="navbar-fixed">
       <nav>
-        <div class="nav-wrapper blue">
+        <div class="nav-wrapper blue lighten-2">
           <div class="container">
             <div class="row">
               <div class="col s3 m3 l1 zero-padding-right">
@@ -28,14 +28,24 @@
               </div>
               <div class="col l11 zero-padding-left hide-on-med-and-down">
                 <ul class="left menu-items">
-                  <li><a href="#">КАК НАЙТИ ПРОДУКЦИЮ</a></li>
-                  <li><a href="#">КАК ОФОРМИТЬ ЗАКАЗ</a></li>
-                  <li><a href="#">НАЙТИ СВОЮ ОТГРУЗКУ</a></li>
-                  <li><a href="#">РУ И СЕРТИФИКАТЫ</a></li>
-                  <li><a href="#contactsModal" class="modal-trigger">КОНТАКТЫ</a></li>
+                  <li><a href="#">Как найти продукцию</a></li>
+                  <li><a href="#">Как оформить заказ</a></li>
+                  <li><a href="#">Найти свою отгрузку</a></li>
+                  <li><a href="#">РУ и сертификаты</a></li>
+                  <li><a href="#">Аптеки</a></li>
                 </ul>
+
                 <div class="right">
-                  <input class="inline" type="text" id="search" placeholder="Поиск ..." />
+
+                  <div class="inline-block">
+                    <form action="/search.html" class="search-wrapper cf">
+                      <input type="text" placeholder="Что Вы ищете?" required="">
+                      <button type="submit"><i class="search-btn material-icons">search</i></button>
+                    </form>
+                  </div>
+                </div>
+                <div class="right">
+                  <a href="#contactsModal" class="modal-trigger contacts-container"><span class="contacts-btn-header">Контакты</span></a>
                 </div>
               </div>
               <div>
@@ -248,7 +258,7 @@
 
     <footer class="footer-style">
       <div class="container">
-        <div class="padding-top">
+        <div class="padding-top text-align-center">
           <p class="centered-text"> 2016 ЗАО "НДА Деловая медицинская компания"</p>
           <p class="centered-text">190121, Санкт-Петербург, ул. Перевозная, д. 6 (Матисов остров).</p>
           <p class="centered-text">Тел/факс: +7 (812) 714-0614</p>

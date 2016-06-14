@@ -17,25 +17,35 @@
   <body class="grey lighten-5">
     <div class="navbar-fixed">
       <nav>
-        <div class="nav-wrapper blue-grey">
+        <div class="nav-wrapper blue lighten-2">
           <div class="container">
             <div class="row">
               <div class="col s3 m3 l1 zero-padding-right">
-                <a href="#" class="logo">LOGO</a>
+                <a href="#" class="logo">Logo</a>
               </div>
               <div class="col s2 m1 offset-m8 offset-s7">
                 <a href="#" data-activates="mobile-sidebar" class="button-collapse"><i class="material-icons">menu</i></a>
               </div>
               <div class="col l11 zero-padding-left hide-on-med-and-down">
-                <ul class="left menu-items nav-text-color">
-                  <li><a href="#">КАК НАЙТИ ПРОДУКЦИЮ</a></li>
-                  <li><a href="#">КАК ОФОРМИТЬ ЗАКАЗ</a></li>
-                  <li><a href="#">НАЙТИ СВОЮ ОТГРУЗКУ</a></li>
-                  <li><a href="#">РУ И СЕРТИФИКАТЫ</a></li>
-                  <li><a href="#contactsModal" class="modal-trigger">КОНТАКТЫ</a></li>
+                <ul class="left menu-items">
+                  <li><a href="#">Как найти продукцию</a></li>
+                  <li><a href="#">Как оформить заказ</a></li>
+                  <li><a href="#">Найти свою отгрузку</a></li>
+                  <li><a href="#">РУ и сертификаты</a></li>
+                  <li><a href="#">Аптеки</a></li>
                 </ul>
+
                 <div class="right">
-                  <input type="text" id="search" placeholder="Поиск ..." />
+
+                  <div class="inline-block">
+                    <form action="/search.html" class="search-wrapper cf">
+                      <input type="text" placeholder="Что Вы ищете?" required="">
+                      <button type="submit"><i class="search-btn material-icons">search</i></button>
+                    </form>
+                  </div>
+                </div>
+                <div class="right">
+                  <a href="#contactsModal" class="modal-trigger contacts-container"><span class="contacts-btn-header">Контакты</span></a>
                 </div>
               </div>
               <div>
@@ -53,7 +63,7 @@
       </nav>
     </div>
 
-    <div class="blue lighten-2 jumbotron">
+    <div class="blue lighten-4 jumbotron">
       <div class="container">
         <div class="row zero-margin-bottom">
           <div class="col s8 offset-s2">
