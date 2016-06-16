@@ -35,12 +35,17 @@ min-height: 100px;
   margin: auto;
 }
 
+.devider-margin-top {
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
 
 /* Common */
 
 .contact-us-btn {
   position: fixed;
-  bottom: 30px;
+  bottom: 62px;
   right: 30px;
 }
 
@@ -68,9 +73,11 @@ min-height: 100px;
 }
 
 .menu-items li a {
-  font-size: 14px;
+  font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
   padding-left: 25px;
   padding-right: 25px;
+  font-weight: 500;
   color: white;
   text-decoration: none;
   position:relative;
@@ -107,15 +114,22 @@ min-height: 100px;
 
 .contacts-btn-header {
   border:2px solid white;
-  padding: 7px;
+  padding: 3px 5px;
   border-radius: 7px;
+  font-weight: 500;
   margin-right: 10px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
 
   transition-property: all;
   transition-duration: 1s;
   transition-timing-function: ease;
+}
+
+.logo {
+  font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 500;
 }
 
 .contacts-btn-header:hover {
@@ -313,6 +327,7 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
 
 .breadcrumbs {
   background-color: #fafafa;
+
 }
 
 .breadcrumbs-wrapper {
@@ -329,6 +344,10 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
   color: #37474f;
 }
 
+.breadcrumb {
+    font-size: 16px;
+}
+
 .breadcrumb-active {
   color: #64b5f6 !important;
 }
@@ -336,7 +355,7 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
 /*  Tooltip */
 
 .backdrop{
-  background-color: #546e7a;
+  background-color: #64b5f6;
 }
 
 /* Groups */
@@ -350,7 +369,7 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
 }
 
 .h1-for-groups-index {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 300;
   color: #0091ea;
   margin-top:15px;
@@ -378,6 +397,7 @@ display: inline-block;
 .product {
   padding: 20px;
   padding-top: 40px;
+  margin-bottom: 20px;
 }
 
 .product-specification {
