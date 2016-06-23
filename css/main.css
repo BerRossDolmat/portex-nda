@@ -557,11 +557,28 @@ and (max-width: 992px) {
   .container {
     width: 95%;
   }
+
+  .width-20p {
+    width: 24.5%;
+  }
+}
+
+@media screen
+and (min-width: 670px)
+and (max-width: 880px) {
+
+  .width-20p {
+    width: 33%;
+  }
 }
 
 @media screen
 and (max-width: 600px) {
   .contact-us-margin-top{
     margin-top: 3px;
+  }
+
+  .width-20p {
+    width: 100%;
   }
 }
