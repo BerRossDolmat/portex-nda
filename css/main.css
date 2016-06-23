@@ -497,9 +497,16 @@ display: inline-block;
   bottom: 0px;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 70px;
+  height: 80px;
   background-color: #546e7a;
+}
 
+.footer-style div div p {
+  margin-bottom: 0;
+}
+
+.footer-style div div {
+  margin-bottom: 0;
 }
 
 .centered-text {
@@ -519,7 +526,7 @@ html {
   min-height: 100%;
 }
 body {
-  margin: 0 0 70px;
+  margin: 0 0 80px;
 }
 
 
@@ -528,11 +535,20 @@ and (min-width: 1280px) {
   .container {
     min-width: 1280px !important;
   }
+
+  .hide-on-desktop {
+    display: none;
+  }
 }
 
 @media screen
-and (min-width: 992px)
+and (min-width: 1130px)
 and (max-width: 1280px) {
+
+  .hide-on-desktop {
+    display: none;
+  }
+
   .menu-items li a {
     padding: 0 10px;
     font-size: 18px;
@@ -552,8 +568,38 @@ and (max-width: 1280px) {
 }
 
 @media screen
-and (min-width: 600px)
+and (min-width: 992px)
+and (max-width: 1130px) {
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block !important;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .width-20p {
+    width: 24.7%;
+  }
+}
+
+@media screen
+and (min-width: 880px)
 and (max-width: 992px) {
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block !important;
+  }
+
   .container {
     width: 95%;
   }
@@ -567,18 +613,69 @@ and (max-width: 992px) {
 and (min-width: 670px)
 and (max-width: 880px) {
 
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .footer-style {
+    height: 90px;
+  }
+
+  body {
+    margin: 0 0 90px;
+  }
+
+  .show-on-mobile {
+    display: block !important;
+  }
+
   .width-20p {
-    width: 33%;
+    width: 32.5%;
+  }
+}
+
+@media screen
+and (min-width: 600px)
+and (max-width: 670px) {
+
+  .footer-style {
+    height: 100px;
+  }
+
+  body {
+    margin: 0 0 100px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block !important;
+  }
+
+  .width-20p {
+    width: 49%;
   }
 }
 
 @media screen
 and (max-width: 600px) {
-  .contact-us-margin-top{
-    margin-top: 3px;
+
+  .search-block {
+    margin-top: -4px !important;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block !important;
   }
 
   .width-20p {
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
   }
 }
