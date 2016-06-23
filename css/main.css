@@ -276,13 +276,13 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
     padding: 0;
 }
 
-        .search-btn {
-          font-size: 1.86em !important;
-          position: absolute;
-          height: 28px !important;
-          top: -16px;
-          left: 25px;
-        }
+.search-btn {
+  font-size: 1.86em !important;
+  position: absolute;
+  height: 28px !important;
+  top: -16px;
+  left: 25px;
+}
 
 /* Slider */
 
@@ -541,6 +541,7 @@ body {
 }
 
 
+
 @media screen
 and (min-width: 1280px) {
   .container {
@@ -560,6 +561,10 @@ and (max-width: 1280px) {
     display: none;
   }
 
+  .modal {
+    min-width: 80%;
+  }
+
   .menu-items li a {
     padding: 0 10px;
     font-size: 18px;
@@ -569,6 +574,10 @@ and (max-width: 1280px) {
     font-size: 18px;
   }
 
+  .show-on-phone {
+    display: none;
+  }
+
   .container {
     width: 95%;
   }
@@ -576,6 +585,8 @@ and (max-width: 1280px) {
   .width-20p {
     width: 24.7%;
   }
+
+
 
   html {
     position:relative;
@@ -588,12 +599,20 @@ and (max-width: 1280px) {
 and (min-width: 992px)
 and (max-width: 1130px) {
 
+  .modal {
+    min-width: 80%;
+  }
+
   .hide-on-mobile {
     display: none;
   }
 
   .show-on-mobile {
     display: block !important;
+  }
+
+  .show-on-phone {
+    display: none;
   }
 
   .container {
@@ -609,12 +628,20 @@ and (max-width: 1130px) {
 and (min-width: 880px)
 and (max-width: 992px) {
 
+  .modal {
+    min-width: 80%;
+  }
+
   .hide-on-mobile {
     display: none;
   }
 
   .show-on-mobile {
     display: block !important;
+  }
+
+  .show-on-phone {
+    display: none;
   }
 
   .container {
@@ -629,6 +656,10 @@ and (max-width: 992px) {
 @media screen
 and (min-width: 670px)
 and (max-width: 880px) {
+
+  .modal {
+    min-width: 80%;
+  }
 
   .hide-on-mobile {
     display: none;
@@ -646,6 +677,10 @@ and (max-width: 880px) {
     display: block !important;
   }
 
+  .show-on-phone {
+    display: none;
+  }
+
   .width-20p {
     width: 32.5%;
   }
@@ -654,6 +689,10 @@ and (max-width: 880px) {
 @media screen
 and (min-width: 600px)
 and (max-width: 670px) {
+
+  .modal {
+    min-width: 90%;
+  }
 
   .footer-style {
     height: 100px;
@@ -671,6 +710,10 @@ and (max-width: 670px) {
     display: block !important;
   }
 
+  .show-on-phone {
+    display: block;
+  }
+
   .width-20p {
     width: 49%;
   }
@@ -678,6 +721,23 @@ and (max-width: 670px) {
 
 @media screen
 and (max-width: 600px) {
+
+  .search-btn {
+    top: -12px;
+    left: 25px;
+  }
+
+  .modal {
+    min-width: 90%;
+  }
+
+  .contact-us-hide {
+    display: none;
+  }
+
+  .show-on-phone {
+    display: block;
+  }
 
   .search-block {
     margin-top: -4px !important;
