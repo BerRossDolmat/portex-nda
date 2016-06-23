@@ -11,8 +11,6 @@ body {
   src: url('../fonts/2219.ttf');
 }
 
-
-
 /* Helpers */
 
 .zero-padding {
@@ -156,6 +154,12 @@ min-height: 100px;
 .contacts-btn-header:hover {
   background: #607d8b;
 
+}
+
+.side-menu-li {
+  text-align:center;
+  color: #263238;
+  font-weight: 500;
 }
 
 /* Search */
@@ -521,6 +525,14 @@ display: inline-block;
 .padding-top {
   padding-top: 10px;
 }
+html {
+  position:relative;
+  min-height: 100%;
+}
+body {
+  margin: 0 0 70px;
+}
+
 
 @media screen
 and (min-width: 1280px) {
@@ -534,10 +546,19 @@ and (min-width: 992px)
 and (max-width: 1280px) {
   .menu-items li a {
     padding: 0 10px;
+    font-size: 18px;
+  }
+
+  .contacts-btn-header{
+    font-size: 18px;
   }
 
   .container {
-    width: 100% !important;
+    width: 95%;
+  }
+
+  .width-20p {
+    width: 24.7%;
   }
 
   html {
@@ -550,10 +571,31 @@ and (max-width: 1280px) {
 @media screen
 and (min-width: 600px)
 and (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
 
+  .width-20p {
+    width: 24.5%;
+  }
+}
+
+@media screen
+and (min-width: 670px)
+and (max-width: 880px) {
+
+  .width-20p {
+    width: 33%;
+  }
 }
 
 @media screen
 and (max-width: 600px) {
+  .contact-us-margin-top{
+    margin-top: 3px;
+  }
 
+  .width-20p {
+    width: 100%;
+  }
 }

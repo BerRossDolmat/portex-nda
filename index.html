@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/unslider-dots.css">
 
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8"/>
   </head>
   <body class="grey lighten-5">
     <div class="navbar-fixed">
@@ -19,13 +19,28 @@
         <div class="nav-wrapper blue lighten-2">
           <div class="container">
             <div class="row">
-              <div class="col s3 m3 l1 zero-padding-right">
+              <div class="col s2 m1 l1 zero-padding-right">
                 <a href="#" class="logo">LOGO</a>
               </div>
-              <div class="col s2 m1 offset-m8 offset-s7">
+              <div class="col m6 offset-m4 s8 hide-on-large-only">
+                <div class="right">
+                  <div class="inline-block">
+                    <form action="/search.html" class="search-wrapper cf">
+                      <input type="text" placeholder="Что Вы ищете?" required="">
+                      <button type="submit"><i class="search-btn material-icons">search</i></button>
+                    </form>
+                  </div>
+                </div>
+                <div class="right contact-us-margin-top">
+                  <a href="#contactsModal" class="modal-trigger contacts-container"><span class="contacts-btn-header">Контакты</span></a>
+                </div>
+              </div>
+
+              <div class="col s1 m1">
                 <a href="#" data-activates="mobile-sidebar" class="button-collapse"><i class="material-icons">menu</i></a>
               </div>
               <div class="col l11 zero-padding-left hide-on-med-and-down header-links-container">
+
                 <ul class="left menu-items">
                   <li><a href="#">Как найти продукцию</a></li>
                   <li><a href="#">Как оформить заказ</a></li>
@@ -45,13 +60,16 @@
                   <a href="#contactsModal" class="modal-trigger contacts-container"><span class="contacts-btn-header">Контакты</span></a>
                 </div>
               </div>
+
+
+
               <div>
                 <ul class="side-nav" id="mobile-sidebar">
+                  <li class="side-menu-li">Меню</li>
                   <li><a href="#">Как найти продукцию</a></li>
                   <li><a href="#">Как оформить заказ</a></li>
                   <li><a href="#">Найти свою отгрузку</a></li>
                   <li><a href="#">РУ и сертификаты</a></li>
-                  <li><a href="#contactsModal" class="modal-trigger">Контакты</a></li>
                 </ul>
               </div>
             </div>
@@ -255,10 +273,10 @@
 
     <footer class="footer-style">
       <div class="container">
-        <div class="padding-top text-align-center">
-          <p class="centered-text"> 2016 ЗАО "НДА Деловая медицинская компания"</p>
-          <p class="centered-text">190121, Санкт-Петербург, ул. Перевозная, д. 6 (Матисов остров).</p>
-          <p class="centered-text">Тел/факс: +7 (812) 714-0614</p>
+        <div class="padding-top text-align-center row">
+          <p class="centered-text col s4"> 2016 ЗАО "НДА Деловая медицинская компания"</p>
+          <p class="centered-text col s4">190121, Санкт-Петербург, ул. Перевозная, д. 6 (Матисов остров).</p>
+          <p class="centered-text col s4">Тел/факс: +7 (812) 714-0614</p>
         </div>
       </div>
     </footer>
