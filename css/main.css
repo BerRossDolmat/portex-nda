@@ -1,11 +1,3 @@
-html {
-  position:relative;
-  min-height: 100%;
-}
-body {
-  margin: 0 0 70px;
-}
-
 
 
 /* Helpers */
@@ -516,6 +508,14 @@ display: inline-block;
 .padding-top {
   padding-top: 10px;
 }
+html {
+  position:relative;
+  min-height: 100%;
+}
+body {
+  margin: 0 0 70px;
+}
+
 
 @media screen
 and (min-width: 1280px) {
