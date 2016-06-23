@@ -21,23 +21,11 @@
         <div class="nav-wrapper blue lighten-2">
           <div class="container">
             <div class="row">
-              <div class="col s3 m3 l1 zero-padding-right">
+              <div class="col s3 m1 l1 zero-padding-right">
                 <a href="#" class="logo">LOGO</a>
               </div>
-              <div class="col s2 m1 offset-m8 offset-s7">
-                <a href="#" data-activates="mobile-sidebar" class="button-collapse"><i class="material-icons">menu</i></a>
-              </div>
-              <div class="col l11 zero-padding-left hide-on-med-and-down header-links-container">
-                <ul class="left menu-items">
-                  <li><a href="#">Как найти продукцию</a></li>
-                  <li><a href="#">Как оформить заказ</a></li>
-                  <li><a href="#">Найти свою отгрузку</a></li>
-                  <li><a href="#">РУ и сертификаты</a></li>
-                  <li><a href="#">Аптеки</a></li>
-                </ul>
-
+              <div class="col m6 offset-m4 hide-on-large-only">
                 <div class="right">
-
                   <div class="inline-block">
                     <form action="/search.html" class="search-wrapper cf">
                       <input type="text" placeholder="Что Вы ищете?" required="">
@@ -49,13 +37,41 @@
                   <a href="#contactsModal" class="modal-trigger contacts-container"><span class="contacts-btn-header">Контакты</span></a>
                 </div>
               </div>
-              <div>
-                <ul class="side-nav" id="mobile-sidebar">
+
+              <div class="col s2 m1 offset-s7">
+                <a href="#" data-activates="mobile-sidebar" class="button-collapse"><i class="material-icons">menu</i></a>
+              </div>
+              <div class="col l11 zero-padding-left hide-on-med-and-down header-links-container">
+
+                <ul class="left menu-items">
                   <li><a href="#">Как найти продукцию</a></li>
                   <li><a href="#">Как оформить заказ</a></li>
                   <li><a href="#">Найти свою отгрузку</a></li>
                   <li><a href="#">РУ и сертификаты</a></li>
-                  <li><a href="#contactsModal" class="modal-trigger">Контакты</a></li>
+                  <li><a href="#">Аптеки</a></li>
+                </ul>
+                <div class="right">
+                  <div class="inline-block">
+                    <form action="/search.html" class="search-wrapper cf">
+                      <input type="text" placeholder="Что Вы ищете?" required="">
+                      <button type="submit"><i class="search-btn material-icons">search</i></button>
+                    </form>
+                  </div>
+                </div>
+                <div class="right">
+                  <a href="#contactsModal" class="modal-trigger contacts-container"><span class="contacts-btn-header">Контакты</span></a>
+                </div>
+              </div>
+
+
+
+              <div>
+                <ul class="side-nav" id="mobile-sidebar">
+                  <li class="side-menu-li">Меню</li>
+                  <li><a href="#">Как найти продукцию</a></li>
+                  <li><a href="#">Как оформить заказ</a></li>
+                  <li><a href="#">Найти свою отгрузку</a></li>
+                  <li><a href="#">РУ и сертификаты</a></li>
                 </ul>
               </div>
             </div>
