@@ -545,6 +545,10 @@ and (max-width: 1280px) {
   .container {
     width: 95%;
   }
+
+  .width-20p {
+    width: 24.7%;
+  }
 }
 
 @media screen
@@ -557,5 +561,7 @@ and (max-width: 992px) {
 
 @media screen
 and (max-width: 600px) {
-
+  .contact-us-margin-top{
+    margin-top: 3px;
+  }
 }
