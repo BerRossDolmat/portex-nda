@@ -1,3 +1,13 @@
+html {
+  position:relative;
+  min-height: 100%;
+}
+body {
+  margin: 0 0 70px;
+}
+
+
+
 /* Helpers */
 
 .zero-padding {
@@ -507,20 +517,32 @@ display: inline-block;
   padding-top: 10px;
 }
 
-
-html {
-  position:relative;
-  min-height: 100%;
-}
-body {
-  margin: 0 0 70px;
-}
-
-
-
 @media screen
 and (min-width: 1280px) {
   .container {
     min-width: 1280px !important;
   }
+}
+
+@media screen
+and (min-width: 992px)
+and (max-width: 1280px) {
+  .menu-items li a {
+    padding: 0 10px;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+}
+
+@media screen
+and (min-width: 600px)
+and (max-width: 992px) {
+
+}
+
+@media screen
+and (max-width: 600px) {
+
 }
