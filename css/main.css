@@ -543,7 +543,7 @@ and (max-width: 1280px) {
   }
 
   .container {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -551,7 +551,7 @@ and (max-width: 1280px) {
 and (min-width: 600px)
 and (max-width: 992px) {
   .container {
-    width: 90%;
+    width: 95%;
   }
 }
 
