@@ -20,7 +20,7 @@
           <div class="container">
             <div class="row">
               <div class="col s2 m1 l1 zero-padding-right">
-                <a href="#" class="logo">LOGO</a>
+                <a href="#" class="logo">Portex</a>
               </div>
               <div class="col m8 offset-m2 s8 hide-on-desktop">
                 <div class="right">
@@ -48,6 +48,10 @@
                   <li><a href="#">РУ и сертификаты</a></li>
                   <li><a href="#">Аптеки</a></li>
                 </ul>
+                <div class="right social-bar">
+                  <div class="social-icons fb tooltipped" data-position="bottom" data-delay="50" data-tooltip="Мы в Facebook"></div>
+                  <div class="social-icons vk tooltipped" data-position="bottom" data-delay="50" data-tooltip="Мы в Контакте"></div>
+                </div>
                 <div class="right">
                   <div class="inline-block">
                     <form action="/search.html" class="search-wrapper cf">
@@ -307,17 +311,24 @@
           </div>
           <div class="col m12 l4">
 
-            <form class="row">
+            <form class="row" onsubmit="contactUsTopShowMessage();return false;">
               <div class="input-field col s12">
-                <input id="name" type="text" class="validate">
+                <input id="name" type="text" class="validate" required
+                  oninvalid="this.setCustomValidity('Представьтесь пожалуйста')"
+                  oninput="setCustomValidity('')">
                 <label for="name">Представьтесь пожалуйста</label>
               </div>
               <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
+                <input id="email" type="email" class="validate" required
+                  oninvalid="this.setCustomValidity('Введите Ваш email')"
+                  oninput="setCustomValidity('')">
                 <label for="email">Ваш Email</label>
               </div>
               <div class="input-field col s12">
-                <textarea id="message" class="materialize-textarea"></textarea>
+                <textarea id="message" class="materialize-textarea" required
+                  oninvalid="this.setCustomValidity('Введите текст сообщения')"
+                  oninput="setCustomValidity('')"
+                  ></textarea>
                 <label for="message">Текст сообщения</label>
               </div>
               <div class="input-field col s12">
@@ -329,9 +340,9 @@
                 <label for="callback">Перезвоните мне</label>
               </div>
               <div class="input-field col s12">
-                <a href="#" class="btn waves-effect waves-light right contacts-submit-btn blue modal-action modal-close"  onclick="contactUsShowMessage()">Отправить письмо
+                <button type="submit" class="btn waves-effect waves-light right contacts-submit-btn blue">Отправить письмо
                   <i class="material-icons right">send</i>
-                </a>
+                </button>
               </div>
             </form>
 
@@ -345,17 +356,25 @@
 
     <div id="contact-us-modal" class="modal">
       <div class="modal-content">
-        <form class="row">
+        <form class="row" onsubmit="contactUsShowMessage();return false;">
           <div class="input-field col s12 m6">
-            <input id="name-bottom" type="text" class="validate">
+            <input id="name-bottom" type="text" class="validate" required
+              oninvalid="this.setCustomValidity('Представьтесь пожалуйста')"
+              oninput="setCustomValidity('')"
+            >
             <label for="name-bottom">Представьтесь пожалуйста</label>
           </div>
           <div class="input-field col s12 m6">
-            <input id="email-bottom" type="email" class="validate">
+            <input id="email-bottom" type="email" class="validate" required
+              oninvalid="this.setCustomValidity('Введите Ваш email')"
+              oninput="setCustomValidity('')"
+            >
             <label for="email-bottom">Ваш Email</label>
           </div>
           <div class="input-field col s12 m12">
-            <textarea id="message-bottom" class="materialize-textarea"></textarea>
+            <textarea id="message-bottom" class="materialize-textarea" required
+              oninvalid="this.setCustomValidity('Введите текст сообщения')"
+              oninput="setCustomValidity('')"></textarea>
             <label for="message-bottom">Текст сообщения</label>
           </div>
           <div class="input-field col s12 m6">
@@ -367,9 +386,9 @@
             <label for="callback-bottom">Перезвоните мне</label>
           </div>
           <div class="input-field col s12">
-            <a href="#" class="btn waves-effect waves-light right contacts-submit-btn blue modal-action modal-close" onclick="contactUsShowMessage()">Отправить письмо
+            <button type="submit" class="btn waves-effect waves-light right contacts-submit-btn blue">Отправить письмо
               <i class="material-icons right">send</i>
-            </a>
+            </button>
           </div>
         </form>
       </div>
