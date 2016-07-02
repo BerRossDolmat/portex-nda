@@ -19,6 +19,19 @@ $( document ).ready(function(){
     autoplay: true,
     infinite: true
   });
+
+  $('#lightSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9,
+    controls: false,
+    thumbMargin: 20,
+    auto: true,
+    speed: 500,
+    pause: 10000
+  });
 });
 
 // Scroll Reveal
