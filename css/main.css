@@ -888,10 +888,10 @@ and (max-width: 600px) {
   }
 
   .footer-style {
-    height: 130px;
+    height: 145px;
   }
 
   body {
-    margin: 0 0 130px;
+    margin: 0 0 145px;
   }
 }
