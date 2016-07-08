@@ -19,12 +19,16 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper blue lighten-2">
-          <div class="container">
-            <div class="row">
+          <div class="container header-container-fix">
+            <div class="row header-container-fix">
               <div class="col s2 m1 l1 zero-padding-right">
                 <a href="#" class="logo">Portex</a>
               </div>
               <div class="col m8 offset-m2 s8 hide-on-desktop">
+                <div class="right social-bar social-bar-mobile">
+                  <div class="social-icons fb tooltipped" data-position="bottom" data-delay="50" data-tooltip="Мы в Facebook"></div>
+                  <div class="social-icons vk tooltipped" data-position="bottom" data-delay="50" data-tooltip="Мы в Контакте"></div>
+                </div>
                 <div class="right">
                   <div class="inline-block search-block">
                     <form action="/search.html" class="search-wrapper cf">
@@ -36,6 +40,7 @@
                 <div class="right contact-us-margin-top contact-us-hide">
                   <a href="#contactsModal" class="modal-trigger contacts-container"><span class="contacts-btn-header">Контакты</span></a>
                 </div>
+
               </div>
 
               <div class="col s1 m1">
@@ -66,7 +71,6 @@
                   <a href="#contactsModal" class="modal-trigger contacts-container"><span class="contacts-btn-header">Контакты</span></a>
                 </div>
               </div>
-
               <div>
                 <ul class="side-nav" id="mobile-sidebar">
                   <li class="side-menu-li">Меню</li>
@@ -272,7 +276,7 @@
               </div>
               <div class="input-field col s12">
                 <input id="tel" type="tel" class="validate" placeholder="+7 XXX XXX-XX-XX">
-                <label for="tel">Ваш номер телефона</label>
+                <label for="tel" class="active">Ваш номер телефона</label>
               </div>
               <div class="input-field col s12">
                 <input type="checkbox" id="callback" />
@@ -318,7 +322,7 @@
           </div>
           <div class="input-field col s12 m6">
             <input id="tel-bottom" type="tel" class="validate" placeholder="+7 XXX XXX-XX-XX">
-            <label for="tel-bottom">Ваш номер телефона</label>
+            <label for="tel-bottom" class="active">Ваш номер телефона</label>
           </div>
           <div class="input-field col s12">
             <input type="checkbox" id="callback-bottom" />
