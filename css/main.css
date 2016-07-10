@@ -20,10 +20,6 @@ body {
   width: 90%;
 }
 
-#contact-us-modal {
-  width: 70%;
-}
-
 #contactsModal {
   width: 70%;
 }
@@ -88,6 +84,10 @@ body {
   position: fixed;
   bottom: 62px;
   right: 30px;
+}
+
+#contact-us-modal {
+  width: 40%;
 }
 
 /* Header */
@@ -652,7 +652,11 @@ and (max-width: 1280px) {
   }
 
   .modal {
-    min-width: 80%;
+    width: 80%;
+  }
+
+  #contact-us-modal {
+    width: 50%;
   }
 
   .menu-items li a {
@@ -688,7 +692,11 @@ and (min-width: 992px)
 and (max-width: 1130px) {
 
   .modal {
-    min-width: 80%;
+    width: 80%;
+  }
+
+  #contact-us-modal {
+    width: 60%;
   }
 
   .hide-on-mobile {
