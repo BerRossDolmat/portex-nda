@@ -23,8 +23,9 @@ $( document ).ready(function(){
   // Product Slider
 
   $('#slideshow').desoSlide({
-    thumbs: $('ul.thumbs li > a'),
+    thumbs: $('#slideshow-thumbs li > a'),
     overlay: "none",
+    thumbEvent: 'mouseover',
   });
 });
 
