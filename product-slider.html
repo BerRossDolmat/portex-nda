@@ -10,7 +10,14 @@
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/unslider.css">
     <link rel="stylesheet" href="css/unslider-dots.css">
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <!-- desoSlide styles -->
+    <link href="css/jquery.desoslide.min.css" rel="stylesheet">
+
+    <!-- Animate, used for slides transition (if you set effect.provider to 'animate', it's the default value) -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- Magic, used for slides transition (if you set effect.provider to 'magic') -->
+    <link href="css/magic.min.css" rel="stylesheet">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -106,21 +113,24 @@
                 <h1 class="h1-for-groups-index">Набор для дилатационной трахеотомии UltraPerc</h1>
                 <span>_______________</span>
               </div>
-              <div class="card-image col s6 offset-s3">
-                <ul id="lightSlider">
-                  <li data-thumb="img/goods-slider1.jpg">
-                      <img src="img/goods-slider1.jpg" />
+              <div class="card-image col s6 offset-s3" id="slideshow">
+                <ul class="thumbs">
+                  <li>
+                    <a href="./img/goods-slider1.jpg">
+                      <img src="./img/goods-slider1.jpg" alt="Image">
+                    </a>
                   </li>
-                  <li data-thumb="img/goods-slider2.jpg">
-                      <img src="img/goods-slider2.jpg" />
+                  <li>
+                    <a href="./img/goods-slider1.jpg">
+                      <img src="./img/goods-slider2.jpg" alt="Image">
+                    </a>
                   </li>
-                  <li data-thumb="img/goods-slider3.jpg">
-                      <img src="img/goods-slider3.jpg" />
+                  <li>
+                    <a href="./img/goods-slider1.jpg">
+                      <img src="./img/goods-slider3.jpg" alt="Image">
+                    </a>
                   </li>
-                  <li data-thumb="img/goods-slider4.jpg">
-                      <img src="img/goods-slider4.jpg" />
-                  </li>
-              </ul>
+                </ul>
               </div>
             </div>
             <div class="card-content">
@@ -187,8 +197,18 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="col s7 offset-s5 m5 offset-m7 l3 offset-l9">
-                  <a class="btn waves-effect waves-light blue order-btn modal-trigger" href="#modal-add-order">Оформить заказ</a>
+                <div class="col s10 offset-s1">
+                  <div class="row">
+                    <div class="col s1 m1 l2">
+                      <div class="download-ru-container">
+                        <div class="download-ru-icon inline-block"><a href="#"><i class="material-icons">file_download</i></a></div>
+                        <div class="inline-block download-ru-text"><a href="#">Скачать РУ</a></div>
+                      </div>
+                    </div>
+                    <div class="col s7 offset-s4 m5 offset-m6 l3 offset-l7">
+                      <a class="btn waves-effect waves-light blue order-btn modal-trigger" href="#modal-add-order">Оформить заказ</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -456,6 +476,7 @@
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/unslider-min.js"></script>
-    <script src="js/lightslider.js"></script>
+    <!-- desoSlide core -->
+    <script src="js/jquery.desoslide.min.js"></script>
   </body>
 </html>

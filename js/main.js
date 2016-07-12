@@ -20,17 +20,11 @@ $( document ).ready(function(){
     infinite: true
   });
 
-  $('#lightSlider').lightSlider({
-    gallery: true,
-    item: 1,
-    loop:true,
-    slideMargin: 0,
-    thumbItem: 9,
-    controls: false,
-    thumbMargin: 20,
-    auto: true,
-    speed: 500,
-    pause: 10000
+  // Product Slider
+
+  $('#slideshow').desoSlide({
+    thumbs: $('ul.thumbs li > a'),
+    overlay: "none",
   });
 });
 
@@ -53,6 +47,7 @@ sr.reveal('.contact-us-btn', {
   duration : 1000,
   delay    : 1200,
 });
+
 
 // Toasts
 

@@ -78,6 +78,10 @@ body {
   padding-bottom: 10px;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 /* Common */
 
 .contact-us-btn {
@@ -499,6 +503,34 @@ body {
   color: #263238;
   margin-top:0px;
   line-height: 2;
+}
+
+.width-24px {
+  width: 24px;
+}
+
+.shipping-icon {
+  cursor: default;
+}
+
+.download-ru-container {
+  padding-top: 30px;
+}
+
+.download-ru-icon {
+  height: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.download-ru-text {
+  font-size: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.shipping-icon:hover {
+  color: #42a5f5;
 }
 
 .order-btn {
