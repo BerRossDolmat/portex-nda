@@ -601,6 +601,7 @@ body {
 .slider-thumbs-horizontal li {
   display: inline-block;
   margin-right: 10px;
+  margin-top: 10px;
   vertical-align: middle;
   height: 100px;
   border: 2px solid #90a4ae;
@@ -623,7 +624,8 @@ body {
 }
 
 #slideshow {
-  height: 400px;
+  height: auto;
+  max-height: 400px;
 }
 
 /* Card */
